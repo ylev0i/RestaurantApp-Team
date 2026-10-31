@@ -39,7 +39,12 @@ namespace RestaurantApp
 
             Console.WriteLine("Chirapha26 and Pratipha12");
 
+
+
+            Console.WriteLine("Rung");
         }
+
+          
     }
     public class Restaurant
     {
