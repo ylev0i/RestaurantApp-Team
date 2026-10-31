@@ -36,11 +36,6 @@ namespace RestaurantApp
             Console.WriteLine($"ค่าเฉลี่ยคะแนนรีวิวทั้งหมด: {averageRate}");
             Console.WriteLine(new string('-', 40));
 
-
-            Console.WriteLine("Chirapha26 and Pratipha12");
-
-
-
             Console.WriteLine("Rung");
             Console.WriteLine("Chirapha26 ,Pratipha12, Ratikan15 ");
             Console.WriteLine("Aon");
