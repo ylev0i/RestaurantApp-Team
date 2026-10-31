@@ -37,12 +37,19 @@ namespace RestaurantApp
             Console.WriteLine(new string('-', 40));
 
 
+            Console.WriteLine("Chirapha26 and Pratipha12");
+
+
+
+            Console.WriteLine("Rung");
             Console.WriteLine("Chirapha26 ,Pratipha12, Ratikan15 ");
             Console.WriteLine("Aon");
 
 
 
         }
+
+          
     }
     public class Restaurant
     {
@@ -57,8 +64,3 @@ namespace RestaurantApp
             this.Name = name;
             this.Type = type;
             this.Rate = rate;
-        }
-        
-    }
-}
- 
