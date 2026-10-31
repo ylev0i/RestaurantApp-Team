@@ -37,6 +37,8 @@ namespace RestaurantApp
             Console.WriteLine(new string('-', 40));
 
 
+            Console.WriteLine("Chirapha26 and Pratipha12");
+
         }
     }
     public class Restaurant
@@ -53,5 +55,7 @@ namespace RestaurantApp
             this.Type = type;
             this.Rate = rate;
         }
+        
     }
 }
+ 
