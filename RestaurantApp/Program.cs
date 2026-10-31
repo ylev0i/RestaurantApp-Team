@@ -34,7 +34,8 @@ namespace RestaurantApp
             Console.WriteLine(new string('-', 40));
             Console.WriteLine($"จำนวนร้านทั้งหมด: {totalRestaurants} restaurant ");
             Console.WriteLine($"ค่าเฉลี่ยคะแนนรีวิวทั้งหมด: {averageRate}");
-            
+            Console.WriteLine(new string('-', 40));
+
 
         }
     }
