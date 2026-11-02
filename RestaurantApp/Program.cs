@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,32 +41,45 @@ namespace RestaurantApp
             Console.WriteLine("Aon");
             Console.WriteLine("Gif");
             Console.WriteLine("Chirapha26 ,Pratipha12, Ratikan15 ");
+        }
 
+        public static void AddRestaurant()
+        {
+            Console.WriteLine("Please enter the name of the restaurant.");
+            Console.ReadLine();
 
-            Console.WriteLine("Please enter the store name");
+            Console.WriteLine("Please enter the type");
+            Console.ReadLine();
+
+            Console.WriteLine("Please rate");
+            Console.ReadLine();
+
+            Console.WriteLine("The restaurant has been added.");
 
 
 
         }
 
-    }
-    public class Restaurant
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public double Rate { get; set; }
 
-        public Restaurant(int id, string name, string type, double rate)
+
+
+        public class Restaurant
         {
-            this.Id = id;
-            this.Name = name;
-            this.Type = type;
-            this.Rate = rate;
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public string Type { get; set; }
+            public double Rate { get; set; }
+
+            public Restaurant(int id, string name, string type, double rate)
+            {
+                this.Id = id;
+                this.Name = name;
+                this.Type = type;
+                this.Rate = rate;
+            }
         }
     }
 }
-
 
 
 
