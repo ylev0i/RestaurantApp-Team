@@ -45,10 +45,9 @@ namespace RestaurantApp
             Console.WriteLine("Chirapha26 ,Pratipha12, Ratikan15 ");
         }
         //Aon
-        public static void AddRestaurant()
+        public static void AddRestaurant(List<Restaurant> restaurants )
         {
-            List<Restaurant> restaurants = new List<Restaurant>
-
+           
             Console.WriteLine("Please enter the name of the restaurant.");
             string name = Console.ReadLine();
 
@@ -59,12 +58,11 @@ namespace RestaurantApp
             Console.WriteLine("Please rate");
             double rate= double.Parse (Console.ReadLine());
 
-
             int id = restaurants.Count + 1;
             restaurants.Add(new Restaurant(id, name, type, rate));
 
-            Console.WriteLine("The restaurant has been added.");
 
+            Console.WriteLine("The restaurant has been added.");
         }
 
 
