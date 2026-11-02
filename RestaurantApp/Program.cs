@@ -39,10 +39,22 @@ namespace RestaurantApp
             Console.WriteLine("Rung");
             Console.WriteLine("Chirapha26 ,Pratipha12, Ratikan15 ");
             Console.WriteLine("Aon");
-
-
-
         }
+        //Gif
+          public static void ShowGoodRating(List<Restaurant> restaurant)
+          {
+              Console.WriteLine("ร้านที่มีคะแนนตั้งแต่ 4.5 ขึ้นไป");
+              
+            foreach (var r in restaurant)
+            {
+                if ( r.Rate >= 4.5) 
+                {
+                    Console.WriteLine($"{r.Name} - {r.Type} - {r.Rate}");
+                }
+            }  
+          }
+        
+        
 
 
     }
