@@ -23,6 +23,8 @@ namespace RestaurantApp
                  new Restaurant(5, "Haidilao Hot Pot", " Hot Pot ", 4.8)
 
             };
+            AddRestaurant(restaurants);
+
             foreach (var item in restaurants)
             {
                 Console.WriteLine($"{item.Name} type:{item.Type} -- {item.Rate}");
@@ -42,21 +44,26 @@ namespace RestaurantApp
             Console.WriteLine("Gif");
             Console.WriteLine("Chirapha26 ,Pratipha12, Ratikan15 ");
         }
-
+        //Aon
         public static void AddRestaurant()
         {
+            List<Restaurant> restaurants = new List<Restaurant>
+
             Console.WriteLine("Please enter the name of the restaurant.");
-            Console.ReadLine();
+            string name = Console.ReadLine();
+
 
             Console.WriteLine("Please enter the type");
-            Console.ReadLine();
+            string type = Console.ReadLine();
 
             Console.WriteLine("Please rate");
-            Console.ReadLine();
+            double rate= double.Parse (Console.ReadLine());
+
+
+            int id = restaurants.Count + 1;
+            restaurants.Add(new Restaurant(id, name, type, rate));
 
             Console.WriteLine("The restaurant has been added.");
-
-
 
         }
 
